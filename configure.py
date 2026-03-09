@@ -29,7 +29,7 @@ from tools.project import (
 # Game versions
 DEFAULT_VERSION = 0
 VERSIONS = [
-    "GAMEID",  # 0
+    "G5SE7D",  # 0
 ]
 
 parser = argparse.ArgumentParser()
@@ -158,7 +158,7 @@ if not config.non_matching:
 # Tool versions
 config.binutils_tag = "2.42-2"
 config.compilers_tag = "20251118"
-config.dtk_tag = "v1.8.1"
+config.dtk_tag = "v1.8.3"
 config.objdiff_tag = "v3.6.1"
 config.sjiswrap_tag = "v1.2.2"
 config.wibo_tag = "1.0.2"
@@ -173,10 +173,14 @@ config.asflags = [
     f"-I build/{config.version}/include",
     f"--defsym BUILD_VERSION={version_num}",
 ]
-config.ldflags = [
-    "-fp hardware",
-    "-nodefaults",
-]
+# config.ldflags = [
+#     "-fp hardware",
+#     "-nodefaults",
+# ]
+
+ldscript_path = Path("config") / config.version / "ldscript.ld"
+config.ldflags = ["-T", str(ldscript_path)]
+
 if args.debug:
     config.ldflags.append("-g")  # Or -gdwarf-2 for Wii linkers
 if args.map:
@@ -193,24 +197,10 @@ config.scratch_preset_id = None
 # Base flags, common to most GC/Wii games.
 # Generally leave untouched, with overrides added below.
 cflags_base = [
-    "-nodefaults",
-    "-proc gekko",
-    "-align powerpc",
-    "-enum int",
-    "-fp hardware",
-    "-Cpp_exceptions off",
-    "-O4,p",
-    "-inline auto",
-    '-pragma "cats off"',
-    '-pragma "warn_notinlined off"',
-    "-maxerrors 1",
-    "-nosyspath",
-    "-RTTI off",
-    "-fp_contract on",
-    "-str reuse",
-    "-multibyte",  # For Wii compilers, replace with `-enc SJIS`
-    "-i include",
-    f"-i build/{config.version}/include",
+    "-O2",
+    # "-Wall",
+    "-I include",
+    f"-I build/{config.version}/include",
     f"-DBUILD_VERSION={version_num}",
     f"-DVERSION_{config.version}",
 ]
@@ -247,7 +237,7 @@ cflags_rel = [
     "-sdata2 0",
 ]
 
-config.linker_version = "GC/1.3.2"
+config.linker_version = "ProDG/3.5"
 
 
 # Helper function for Dolphin libraries
