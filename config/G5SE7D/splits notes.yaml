@@ -9,7 +9,12 @@ Weird split ranges that havent been resolved yet.
 	XSEItem_Default has one function in it? The current theory is the rest is ctors and dtors
 
 ALL of engineX in the EngineX/GC part of the file has not been split yet (if it exists)
-The PS2 has these files, but i am i unsure about it at the moment. stopping splitting for now probably
+The PS2 has these files, but i am unsure about it at the moment. stopping splitting for now probably
+
+EngineX2 also takes in code that it should not.
+
+I'm not even sure each and every one of these files exist in the GC version. 
+For example the 3 Wnd ones right below. 
 
 EngineX\EXWndDebug.cpp:
 
@@ -17,33 +22,12 @@ EngineX\EXWndSprite.cpp:
 
 EngineX\EXWndText.cpp:
 
-EngineX\EXWString.cpp:
-
 EngineX\EXPhysicsSphere.cpp:
 
 EngineX\EXPhysicsSoft.cpp:
-
-EngineX\GC\EngineX.cpp:
 
 EngineX\EXArray.cpp:
 
 EngineX\EXDbgfont.cpp:
 
 EngineX\EXEffectsSys.cpp:
-
-EngineX\EXGeoGrabpoint.cpp:
-
-EngineX\EXGeoInstance.cpp:
-
-EngineX\EXGeoTexture.cpp:
-
-
-EngineX\EXItemAnimator_Camera.cpp:
-
-EngineX\EXItemAnimator_Collision.cpp:
-
-EngineX\EXRect.cpp:
-
-EngineX\GC\GCGeoEntity_Instance.cpp:
-
-EngineX\GC\GCGeoTexture.cpp:

@@ -628,6 +628,33 @@ EngineX\EXWatcher.cpp:
 EngineX\EXWnd.cpp:
 	.text       start:0x8030123C end:0x8030336C
 
+EngineX\EXWString.cpp:
+	.text       start:0x8030336c end:0x80304464
+
+EngineX\GC\EngineX.cpp:
+	.text       start:0x80304464 end:0x8034b0f0
+
+EngineX\EXGeoGrabpoint.cpp:
+	.text       start:0x8034b0f0 end:0x8034da7c
+
+EngineX\EXGeoInstance.cpp:
+	.text       start:0x8034da7c end:0x8034dd6c
+
+EngineX\EXGeoTexture.cpp:
+	.text       start:0x8034dd6c end:0x8034dde0
+
+EngineX\EXItemAnimator_Camera.cpp:
+	.text       start:0x8034dde0 end:0x8034df98
+
+EngineX\EXItemAnimator_Collision.cpp:
+	.text       start:0x8034df98 end:0x8034e220
+
+EngineX\EXRect.cpp:
+	.text       start:0x8034e220 end:0x8034e344
+
+EngineX\GC\EngineX2.cpp:
+	.text       start:0x8034e344 end:0x80357634
+
 sn/SNSerial.c:
 	.text       start:0x80357634 end:0x80357700
 
