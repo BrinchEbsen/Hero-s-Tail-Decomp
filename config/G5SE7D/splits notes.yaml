@@ -8,6 +8,8 @@ Weird split ranges that havent been resolved yet.
 	0x80379f00 - 0x8037abac // seems to be a lot of functions from random files??? Maybe weak from something?
 	XSEItem_Default has one function in it? The current theory is the rest is ctors and dtors
 
+ALL of engineX in the EngineX/GC part of the file has not been split yet (if it exists)
+The PS2 has these files, but i am i unsure about it at the moment. stopping splitting for now probably
 
 EngineX\EXWndDebug.cpp:
 
