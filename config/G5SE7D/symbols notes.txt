@@ -220,15 +220,77 @@ end split probably aint even right
 
 .sdata
 
-Restart this? looks like the release_globals files actually says where this stuff came from or rather, where it should come from.
+Restart this? looks like the release_globals files actually says where this stuff came from or rather, 
+where it should come from.
 
 0x804cb320 - 0x804cb324 // SeTrigger_Default
 0x804cb324 - 0x804cb328 // TriggerSpecial
 0x804cb328 - 0x804cb348 // BallGadget
 0x804cb348 - 0x804cb354 // Player_Sparx
 0x804cb354 - 0x804cb35c // PreBosses
-0x804cb35c - 0x00000000 // PrePlayer
+0x804cb35c - 0x804cb37c // PrePlayer
+0x804cb37c - 0x804cb384 // PreSpyro
+0x804cb384 - 0x804cb3a0 // PreSXEItemHandler
+0x804cb3a0 - 0x804cb3f8 // PreCode
+0x804cb3f8 - 0x804cb41c // PreGeneric
+0x804cb41c - 0x804cb440 // PreGUI
+0x804cb440 - 0x804cb548 // PreLevels
+0x804cb548 - 0x804cb5d0 // PreMinigames
+0x804cb5d0 - 0x804cb5f4 // PrePanel
+0x804cb5f4 - 0x804cb65c // PreSE
+0x804cb65c - 0x804cb670 // PreSupport
+
+0x804cb670 - 0x804cba20 // SDK shit (dsdk/math/sn i guess)
+
+0x804cba20 - 0x804cba28 // ExAnimCache
+0x804cba28 - 0x804cba74 // ExApp
+0x804cba74 - 0x804cba78 // ExDebugTreeWnd
+0x804cba78 - 0x804cba88 // ExDisplay
+0x804cba88 - 0x804cba94 // ExFile
+0x804cba94 - 0x804cba98 // ExGamepad
+0x804cba98 - 0x804cbaa4 // ExGeoAnim
+0x804cbaa4 - 0x00000000 // ExGeoCommon??? dunno yet
 
 .sdata2
 
+0x804ccf20 - 0x804ccf24 // TriggerList.cpp
+0x804ccf24 - 0x804ccf30 // PreBosses
+0x804ccf30 - 0x804ccf50 // PreLevels
+0x804ccf50 - 0x804cdc7f // SDK shit
+
+MOSTLY DONE ALREADY
+
 .sbss
+
+0x804cc440 - 0x804cc444 // SBBS START / __start
+0x804cc444 - 0x804cc44c // Player_Sparx
+0x804cc44c - 0x804cc454 // PreBlinky
+0x804cc454 - 0x804cc45c // PreHunter
+0x804cc45c - 0x804cc46c // PrePlayer
+0x804cc46c - 0x804cc474 // SgtBird
+0x804cc474 - 0x804cc49c // PreSpyro
+0x804cc49c - 0x804cc4a0 // PreCamera
+0x804cc4a0 - 0x804cc4ac // PreCode
+0x804cc4ac - 0x804cc4b4 // PreGeneric
+0x804cc4b4 - 0x804cc4d4 // PreGUI
+0x804cc4d4 - 0x804cc4e0 // PreLevels
+0x804cc4e0 - 0x804cc4ec // PreMiniGames
+0x804cc4ec - 0x804cc4f4 // PrePanel
+0x804cc4f4 - 0x804cc534 // PreSE
+0x804cc534 - 0x804cc550 // PreSupport
+0x804cc550 - 0x804cc7f8 // SDK shit
+0x804cc7f8 - 0x804cc810 // ExDebugTreeWnd
+0x804cc810 - 0x804cc820 // ExDisplay
+0x804cc820 - 0x804cc828 // ExFileSys
+0x804cc828 - 0x804cc838 // ExGeoCommon
+0x804cc838 - 0x804cc83c // ExGeoEntity
+0x804cc83c - 0x804cc84c // ExGeoEntity_NavMesh
+0x804cc84c - 0x804cc850 // ExItem
+0x804cc850 - 0x804cc858 // ExRand
+0x804cc858 - 0x804cc85c // ExRenderEnv
+0x804cc85c - 0x804cc860 // ExResourceWnd
+0x804cc860 - 0x804cc864 // EXScratchPad
+0x804cc864 - 0x804cc868 // ExStateSaver
+0x804cc868 - 0x804ccce0 // big engine x file
+0x804ccce0 - 0x804ccef4 // SDK shit again??
+0x804ccef4 to the end of the section has earlier files in it? why? I have no idea
