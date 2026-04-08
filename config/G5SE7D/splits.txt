@@ -327,7 +327,7 @@ gcc/lshrdi3.c:
 gcc/moddi3.c:
 	.text       start:0x8025EE88 end:0x8025F3BC
 
-gcc/pure_virtual.cpp:
+gcc/pure_virtual.c:
 	.text       start:0x8025F3BC end:0x8025F3DC
 
 gcc/udivdi3.c:
@@ -336,7 +336,7 @@ gcc/udivdi3.c:
 gcc/umoddi3.c:
 	.text       start:0x8025F8C0 end:0x8025FD58
 
-gcc/terminate.cpp:
+gcc/terminate.c:
 	.text       start:0x8025FD58 end:0x8025FD94
 
 ppc/PPCArch.c:

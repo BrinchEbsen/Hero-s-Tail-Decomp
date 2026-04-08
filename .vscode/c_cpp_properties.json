@@ -5,6 +5,7 @@
             "defines": [
             ],
             "includePath": [
+                "${workspaceFolder}/include",
                 "${workspaceFolder}/include/Spyro/Code"
             ],
             "cStandard": "c99",
