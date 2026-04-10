@@ -12,3 +12,5 @@ typedef long int s64;
 typedef long long int s128;
 typedef signed char Bool;
 typedef short unsigned int wchar;
+
+#define NULL 0
