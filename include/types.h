@@ -1,5 +1,7 @@
 // Types for Spyro
 
+#define NULL 0
+
 typedef unsigned char u8;
 typedef short unsigned int u16;
 typedef unsigned int u32;
